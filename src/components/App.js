@@ -13,10 +13,10 @@ class App extends React.Component{
   }
 
 
-  render(){
-    if({count}%2==0){
+  if({count}%2==0){
+    render(){
+    
     console.log(`Rendering with count:-${this.state.count}`)
-    }
     return(
       <div>
         <span id="count">{this.state.count}</span>
@@ -25,6 +25,7 @@ class App extends React.Component{
     )
 
   }
+}
 }
 
 export default App;
